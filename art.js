@@ -85,7 +85,7 @@ class Flower {
   }
 }
 
-window.addEventListener("mousemove", function (e) {
+window.addEventListener("pointermove", function (e) {
   if (drawing) {
     for (let i = 0; i < 3; i++) {
       const root = new Root(e.x, e.y);
@@ -93,7 +93,7 @@ window.addEventListener("mousemove", function (e) {
     }
   }
 });
-window.addEventListener("mousedown", function (e) {
+window.addEventListener("pointerdown", function (e) {
   drawing = true;
   for (let i = 0; i < 30; i++) {
     const root = new Root(e.x, e.y);
@@ -101,6 +101,6 @@ window.addEventListener("mousedown", function (e) {
   }
 });
 
-window.addEventListener("mouseup", function (e) {
+window.addEventListener("pointerup", function (e) {
   drawing = false;
 });
